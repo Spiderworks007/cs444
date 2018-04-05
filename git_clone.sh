@@ -20,3 +20,7 @@ echo "git int"
     git status
 echo "git commit"
     git commit -m "$1"
+echo "git add origin"
+    git add origin $2
+echo "git push"
+    git push origin master
