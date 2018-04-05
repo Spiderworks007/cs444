@@ -22,5 +22,10 @@ echo "git commit"
     git commit -m "$1"
 echo "git add origin"
     git add origin $2
+if [ ! -d $2 ]
+then
+	echo "$START not a directory!"
+	exit 1
+fi
 echo "git push"
     git push origin master
